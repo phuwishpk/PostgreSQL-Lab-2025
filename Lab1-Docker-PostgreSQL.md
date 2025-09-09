@@ -102,6 +102,7 @@ docker inspect postgres
 
 
 **บันทึกผลการทดลอง - Step 1:**
+<img width="1004" height="177" alt="image" src="https://github.com/user-attachments/assets/52358210-bce7-41f6-a47b-97e0f58f1d4b" />
 
 
 
@@ -498,8 +499,7 @@ INSERT INTO hr.employee_orders (employee_id, customer_id, order_date, commission
 
 <img width="720" height="418" alt="image" src="https://github.com/user-attachments/assets/19268455-5eaa-409c-95a3-862543af696b" />
 <img width="390" height="274" alt="image" src="https://github.com/user-attachments/assets/c9fa7bb0-78fa-4265-8895-6ef4dabd8f0c" />
-![Uploading image.png…]()
-
+<img width="421" height="38" alt="image" src="https://github.com/user-attachments/assets/922edfc7-304a-4a47-afe2-3ca65cf81ce6" />
 
 
 ### Step 10: ทดสอบการเข้าถึง Schema และ Search Path
@@ -561,13 +561,13 @@ SET search_path TO public;
 ```
 
 **บันทึกผลการทดลอง - Step 10:**
-```
+
 ใส่ Screenshot ของ:
-1. ผลการแสดง search_path
-2. ผลการ query ภายใน schema เดียวกัน (sales.customers + sales.orders)
-3. ผลการ JOIN ข้าม schemas (sales + hr + inventory)
-4. ข้อมูลที่แสดงจาก complex join ข้าม 3 schemas
-```
+<img width="453" height="430" alt="image" src="https://github.com/user-attachments/assets/fdc28a01-9776-4569-979d-07c54ef6e438" />
+
+<img width="810" height="862" alt="image" src="https://github.com/user-attachments/assets/3859b616-e76c-41e2-a957-3c67176b3b8e" />
+
+
 
 ### Step 11: ทดสอบการเชื่อมต่อจาก User อื่น
 
@@ -593,12 +593,9 @@ INSERT INTO test_permissions (name) VALUES ('Test by lab_user'); -- ทำไม
 ```
 
 **บันทึกผลการทดลอง - Step 11:**
-```
-ใส่ Screenshot ของ:
-1. ผลการเชื่อมต่อด้วย lab_user
-2. ผลการทดสอบสิทธิ์ต่างๆ
-3. ข้อความ error (ถ้ามี) เมื่อไม่มีสิทธิ์
-```
+<img width="779" height="223" alt="image" src="https://github.com/user-attachments/assets/0b84ab4f-7337-4b6f-965c-6bc12913609c" />
+<img width="798" height="274" alt="image" src="https://github.com/user-attachments/assets/67eddf0f-8909-4332-b807-d86a829c263f" />
+
 
 ### Step 12: การจัดการ Volume และ Data Persistence
 
