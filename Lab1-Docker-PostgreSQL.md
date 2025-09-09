@@ -79,9 +79,8 @@ docker run hello-world
 ```
 
 **บันทึกผลการทดลอง - การเตรียมความพร้อม:**
-```
-ใส่ Screenshot ของผลการรัน docker --version และ docker run hello-world ที่นี่
-```
+
+<img width="588" height="386" alt="Screenshot 2025-09-09 145930" src="https://github.com/user-attachments/assets/3bd0a67d-e313-4d06-90cf-e1c70c90766e" />
 
 ## ขั้นตอนการทดลอง
 
@@ -104,7 +103,6 @@ docker inspect postgres
 
 **บันทึกผลการทดลอง - Step 1:**
 
-<img width="588" height="386" alt="Screenshot 2025-09-09 145930" src="https://github.com/user-attachments/assets/3bd0a67d-e313-4d06-90cf-e1c70c90766e" />
 
 
 ### Step 2: Create Docker Volume for Data Persistence
@@ -127,7 +125,7 @@ docker volume create postgres-config
 
 **บันทึกผลการทดลอง - Step 2:**
 
-<img width="588" height="386" alt="Screenshot 2025-09-09 145930" src="https://github.com/user-attachments/assets/3bd0a67d-e313-4d06-90cf-e1c70c90766e" />
+
 <img width="803" height="652" alt="image" src="https://github.com/user-attachments/assets/9f8e3e53-a7d5-4e42-b59b-51516f000b0b" />
 <img width="458" height="140" alt="image" src="https://github.com/user-attachments/assets/550f9905-b3b0-4390-9031-d366da782462" />
 
