@@ -104,7 +104,7 @@ docker inspect postgres
 
 **บันทึกผลการทดลอง - Step 1:**
 ```
-ใส่ Screenshot ของผลการรัน docker images ที่นี่
+<img width="588" height="386" alt="Screenshot 2025-09-09 145930" src="https://github.com/user-attachments/assets/3bd0a67d-e313-4d06-90cf-e1c70c90766e" />
 ```
 
 ### Step 2: Create Docker Volume for Data Persistence
@@ -127,8 +127,12 @@ docker volume create postgres-config
 
 **บันทึกผลการทดลอง - Step 2:**
 ```
-ใส่ Screenshot ของผลการรัน docker volume ls และ docker volume inspect postgres-data ที่นี่
+<img width="588" height="386" alt="Screenshot 2025-09-09 145930" src="https://github.com/user-attachments/assets/3bd0a67d-e313-4d06-90cf-e1c70c90766e" />
+<img width="803" height="652" alt="image" src="https://github.com/user-attachments/assets/9f8e3e53-a7d5-4e42-b59b-51516f000b0b" />
+<img width="458" height="140" alt="image" src="https://github.com/user-attachments/assets/550f9905-b3b0-4390-9031-d366da782462" />
 ```
+
+
 
 ### Step 3: Create PostgreSQL Container with Volume
 
@@ -161,7 +165,7 @@ docker run --name postgres-lab \
 
 **บันทึกผลการทดลอง - Step 3:**
 ```
-ใส่ Screenshot ของผลการรัน docker run ที่นี่
+<img width="1614" height="52" alt="image" src="https://github.com/user-attachments/assets/e82cd6cc-d742-4313-b135-3908b8c52cba" />
 ```
 
 ### Step 4: Verify Container Status and Resource Usage
@@ -182,10 +186,8 @@ docker volume inspect postgres-data
 
 **บันทึกผลการทดลอง - Step 4:**
 ```
-ใส่ Screenshot ของ:
-1. ผลการรัน docker ps
-2. ส่วนหนึ่งของ docker logs postgres-lab
-3. ผลการรัน docker stats
+<img width="964" height="561" alt="image" src="https://github.com/user-attachments/assets/a179d88d-0e44-4d3d-8670-147401ee1f05" />
+
 ```
 
 ### Step 5: Connect to PostgreSQL และตรวจสอบ Configuration
@@ -227,10 +229,9 @@ WHERE name IN ('shared_buffers', 'work_mem', 'maintenance_work_mem', 'effective_
 
 **บันทึกผลการทดลอง - Step 5:**
 ```
-ใส่ Screenshot ของ:
-1. ผลการรัน SELECT version();
-2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size;
-3. ผลการรัน \l และ \du
+<img width="827" height="850" alt="image" src="https://github.com/user-attachments/assets/10ab9adc-2ba6-4b05-a368-5a3a463b4eb3" />
+<img width="859" height="806" alt="image" src="https://github.com/user-attachments/assets/bd816894-773d-41fa-8c5f-862fbbf49acd" />
+
 ```
 
 ### Step 6: Database Management Operations
@@ -271,10 +272,8 @@ WHERE datname = 'lab_db';
 
 **บันทึกผลการทดลอง - Step 6:**
 ```
-ใส่ Screenshot ของ:
-1. ผลการสร้าง lab_db
-2. ผลการรัน \l+ แสดงฐานข้อมูลทั้งหมด
-3. ผลการ query ข้อมูลฐานข้อมูล
+<img width="895" height="542" alt="image" src="https://github.com/user-attachments/assets/24d106d4-cfd9-41e0-8bd5-f8268fcd87fe" />
+
 ```
 
 ### Step 7: User และ Role Management
@@ -329,10 +328,8 @@ WHERE r.rolname NOT LIKE 'pg_%';
 
 **บันทึกผลการทดลอง - Step 7:**
 ```
-ใส่ Screenshot ของ:
-1. ผลการสร้าง users ทั้งหมด
-2. ผลการรัน \du+
-3. ผลการ query pg_roles
+<img width="889" height="496" alt="image" src="https://github.com/user-attachments/assets/d13b0dc5-5ddb-4ec6-8a7d-2224e2f76b69" />
+
 ```
 
 ### Step 8: การจัดการสิทธิ์ User
@@ -391,15 +388,15 @@ GRANT SELECT ON postgres_test_table TO lab_user;
 
 **บันทึกผลการทดลอง - Step 8:**
 ```
-ใส่ Screenshot ของ:
-1. ผลการ ALTER USER commands
-2. ผลการรัน \dp test_permissions
-3. ผลการ GRANT commands
+<img width="353" height="80" alt="image" src="https://github.com/user-attachments/assets/a233c884-3916-4b98-8404-d9bcffd5e358" />
+<img width="631" height="820" alt="image" src="https://github.com/user-attachments/assets/0fa43c10-8b34-4d56-b3b7-3abcc1234896" />
+<img width="640" height="371" alt="image" src="https://github.com/user-attachments/assets/c775f437-1aee-4a82-a997-4f17e608d1c9" />
+
 ```
 **คำถาม
  ```
 Access Privileges   postgres=arwdDxtm/postgres มีความหมายอย่างไร
-
+ตอบ-รูปแบบที่ psql แสดงสิทธิ์ (ACL) ของออบเจ็กต์
 
  ```
 ### Step 9: Schema Management และ Namespace
@@ -503,10 +500,10 @@ INSERT INTO hr.employee_orders (employee_id, customer_id, order_date, commission
 **บันทึกผลการทดลอง - Step 9:**
 ```
 ใส่ Screenshot ของ:
-1. ผลการสร้าง schemas (\dn+)
-2. ผลการสร้างตารางในแต่ละ schema
-3. ผลการใส่ข้อมูลและ query ข้อมูล
-4. ข้อมูลในตาราง employee_orders ที่จะใช้สำหรับ JOIN ข้าม schema
+<img width="720" height="418" alt="image" src="https://github.com/user-attachments/assets/19268455-5eaa-409c-95a3-862543af696b" />
+<img width="390" height="274" alt="image" src="https://github.com/user-attachments/assets/c9fa7bb0-78fa-4265-8895-6ef4dabd8f0c" />
+![Uploading image.png…]()
+
 ```
 
 ### Step 10: ทดสอบการเข้าถึง Schema และ Search Path
