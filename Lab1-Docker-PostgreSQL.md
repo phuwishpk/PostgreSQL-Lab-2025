@@ -128,6 +128,7 @@ docker volume create postgres-config
 
 
 <img width="803" height="652" alt="image" src="https://github.com/user-attachments/assets/9f8e3e53-a7d5-4e42-b59b-51516f000b0b" />
+
 <img width="458" height="140" alt="image" src="https://github.com/user-attachments/assets/550f9905-b3b0-4390-9031-d366da782462" />
 
 
@@ -229,6 +230,7 @@ WHERE name IN ('shared_buffers', 'work_mem', 'maintenance_work_mem', 'effective_
 **บันทึกผลการทดลอง - Step 5:**
 
 <img width="827" height="850" alt="image" src="https://github.com/user-attachments/assets/10ab9adc-2ba6-4b05-a368-5a3a463b4eb3" />
+
 <img width="859" height="806" alt="image" src="https://github.com/user-attachments/assets/bd816894-773d-41fa-8c5f-862fbbf49acd" />
 
 
@@ -387,7 +389,9 @@ GRANT SELECT ON postgres_test_table TO lab_user;
 **บันทึกผลการทดลอง - Step 8:**
 
 <img width="353" height="80" alt="image" src="https://github.com/user-attachments/assets/a233c884-3916-4b98-8404-d9bcffd5e358" />
+
 <img width="631" height="820" alt="image" src="https://github.com/user-attachments/assets/0fa43c10-8b34-4d56-b3b7-3abcc1234896" />
+
 <img width="640" height="371" alt="image" src="https://github.com/user-attachments/assets/c775f437-1aee-4a82-a997-4f17e608d1c9" />
 
 
@@ -498,7 +502,9 @@ INSERT INTO hr.employee_orders (employee_id, customer_id, order_date, commission
 **บันทึกผลการทดลอง - Step 9:**
 
 <img width="720" height="418" alt="image" src="https://github.com/user-attachments/assets/19268455-5eaa-409c-95a3-862543af696b" />
+
 <img width="390" height="274" alt="image" src="https://github.com/user-attachments/assets/c9fa7bb0-78fa-4265-8895-6ef4dabd8f0c" />
+
 <img width="421" height="38" alt="image" src="https://github.com/user-attachments/assets/922edfc7-304a-4a47-afe2-3ca65cf81ce6" />
 
 
@@ -594,6 +600,7 @@ INSERT INTO test_permissions (name) VALUES ('Test by lab_user'); -- ทำไม
 
 **บันทึกผลการทดลอง - Step 11:**
 <img width="779" height="223" alt="image" src="https://github.com/user-attachments/assets/0b84ab4f-7337-4b6f-965c-6bc12913609c" />
+
 <img width="798" height="274" alt="image" src="https://github.com/user-attachments/assets/67eddf0f-8909-4332-b807-d86a829c263f" />
 
 
